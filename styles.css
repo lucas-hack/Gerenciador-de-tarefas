@@ -1,0 +1,54 @@
+body {
+    background-color: gray;
+    font-family: Poppins;
+    margin: 0;
+}
+
+.tela {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    background-color: #F6F2FF;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+/* parte 1 e 2 da página */
+
+#inicial {
+    position: absolute;
+    width: 360px;
+    height: 640px;
+    background-color: #F6F2FF;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#titulo {
+    position: absolute;
+    top: 433px;
+    left: 59px;
+    color: #6368D9;
+    font-weight: 800;
+}
+
+#btn-seta {
+    position: absolute;
+    top: 566px;
+    left: 293px;
+}
+
+#imagem-caderno {
+    position: absolute;
+    top: 87px;
+    left: 31px;
+}
+
+/* parte 2 */
+
+#welcome {
+    position: absolute;
+    top: 150px;
+    left: 59px;
+}
