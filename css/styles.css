@@ -3,10 +3,10 @@
 * {
     font-family: Poppins;
     /* border: solid 1px red; */
+    border: none;
 }
 
 body {
-    width: 360px;
-    height: 640px;
-    background-color: rgb(102, 75, 119);
+    background-color: gray;
+    border: none;
 }
