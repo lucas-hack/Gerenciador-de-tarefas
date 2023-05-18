@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="javaScript/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages-1-2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,9 +19,10 @@
     <div class="tela">
         <img id="welcome" src="img/parte - 2/welcome-back.svg">
 
+        <form id="form">
             <div>
                 <label for="email">E-mail:</label>
-                <input type="text" id="email" placeholder="Email">
+                <input type="email" id="email" placeholder="Email">
                 <small id="textEmail"></small>
             </div>
 
@@ -33,14 +34,17 @@
 
             <button type="submit">Log in</button>
             <small id="textForm"></small>
-        
+        </form>
+
         <div id="inicial">
             <img id="imagem-caderno" src="img/parte - 1/caderno-lapis.svg">
             <h2 id="titulo">Manage your task,
                 quickly.</h2>
-            <button id="btn-seta" onclick="esconde('inicial')"><img src="img/parte - 1/botão-seta.svg"></button>
+            <div id="btn-seta" onclick="esconde('inicial')"><img src="img/parte - 1/botão-seta.svg"></div>
         </div>
     </div>
+    <script src="javaScript/parte - 1/botao.js"></script>
+    <script src="javaScript/parte - 2/valid.js"></script>
 </body>
 
 </html>
