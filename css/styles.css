@@ -6,7 +6,26 @@
     border: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: gray;
     border: none;
+}
+
+.tela {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    background-color: #F6F2FF;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+
+input, select {
+    padding-left: 19px;
 }
