@@ -18,40 +18,40 @@
         <img src="../img/parte - 2/Ellipse pequena.svg" class="bola-pequena-1">
         <h3 class="escrita welcome-1">Welcome!</h3>
 
+        <form id="form">
+            <div>
+                <input type="name" id="nome" placeholder="Name:" class="button-index name">
+            </div>
 
-        <div>
-            <input type="name" id="name" placeholder="Name:" class="button-index">
-        </div>
+            <select class="seletor" id="job" name="job" required>
+                <option value="">Occupation</option>
+                <option value="aluno">Student</option>
+                <option value="professor">Teacher</option>
+                <option value="trabalhador">personal use</option>
+                <option value="trabalhador">other</option>
+            </select>
 
-        <select class="seletor" id="job" name="job" required>
-            <option value="">Occupation</option>
-            <option value="aluno">Student</option>
-            <option value="professor">Teacher</option>
-            <option value="trabalhador">personal use</option>
-            <option value="trabalhador">other</option>
-        </select>
+            <h4 id="text-for-url">Put the url link to your profile picture</h4>
 
-        <h4 id="text-for-url">Put the url link to your profile picture</h4>
-
-        <form>
             <input type="text" id="imageUrl" placeholder="Image" />
             <button type="button" id="coloca-foto" onclick="carregarImagem()">upload</button>
-        </form>
 
-        <div>
-            <img id="userImage" src="#" style="color: #F6F2FF;" alt="Imagem do usuário" />
-        </div>
+            <div>
+                <img id="userImage" src="#" style="color: #F6F2FF;" alt="Imagem do usuário" />
+            </div>
 
-        <form id="form">
+
             <div>
                 <input type="email" id="email" class="email-1 button-index" placeholder="Email" class="button-index">
             </div>
 
             <div>
-                <input type="password" id="password" class="password-1 button-index" placeholder="password" class="button-index">
+                <input type="password" id="password" class="password-1 button-index" placeholder="password"
+                    class="button-index">
             </div>
 
-            <button type="submit" id="save" class="login-1 button-index">Save</button>
+            <button type="submit" class="login-1">Log in</button>
+
         </form>
 
         <p id="redirect-1">You have an account? <a href="../">log in.</a></p>

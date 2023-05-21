@@ -150,7 +150,7 @@
     top: 23px;
 }
 
-#name {
+.name {
     position: absolute;
     top: 150px;
     left: 49px;

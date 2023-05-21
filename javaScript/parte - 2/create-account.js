@@ -3,56 +3,69 @@ function carregarImagem() {
     document.getElementById("userImage").src = url;
 }
 
-// validação de email e senha
-
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let form = document.querySelector("form");
-// let textForm = document.getElementById("textForm");
-// let textEmail = document.getElementById("textEmail");
-// let textPassword = document.getElementById("textPassword");
+let nome = document.getElementById("nome");
 
 form.addEventListener('submit', (e) => {
-    if (email.value == "" || password.value == "") {
-        // textForm.textContent = "Você precisa preencher os campos necessários";
-    } else if (validEmail(email.value) === true && validPassword(password.value) === true){
+    e.preventDefault();
+
+    if (email.value === "" || password.value === "" || nome.value === "") {
+        console.log("Você precisa preencher os campos necessários");
+    } else if (validEmail(email.value) && validPassword(password.value) && validNome(nome.value)) {
         console.log(email.value);
         console.log(password.value);
-        // textForm.textContent = "";
-        // textEmail.textContent = "";
-        // textPassword.textContent = "";
-    } else {
-        console.log("requisição não atendida")
-    }
+        console.log(nome.value);
 
-    e.preventDefault();
-})
+        localStorage.setItem("email", email.value); // Armazenar valor no Local Storage
+
+        localStorage.setItem("password", password.value);
+
+        localStorage.setItem("nome", nome.value);
+
+        window.location.href = "gerenciador de tarefas/pages/home.html";
+        
+    } else {
+        console.log("Requisição não atendida");
+    }
+});
 
 email.addEventListener("keyup", () => {
-    if (validEmail(email.value) !== true) {
-        // textEmail.textContent = "o formato do email deve ser @gmail.com";
+    if (validEmail(email.value)) {
+        console.log("Email aceito");
     } else {
-        console.log("email aceito")
-        // textEmail.textContent = "";
+        console.log("O formato do email deve ser exemplo@gmail.com");
     }
-})
+});
 
 password.addEventListener("keyup", () => {
-    if (validPassword(password.value) !== true){
-        // textPassword.textContent = "A senha precisa ter 6 digitos, no mínimo um maiúsculo e um minúsculos"
+    if (validPassword(password.value)) {
+        console.log("Senha aceita");
     } else {
-        console.log("senha aceita")
-        // textPassword.textContent = ""
+        console.log("A senha precisa ter no mínimo 6 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula e um número");
     }
-})
+});
+
+nome.addEventListener('keyup', () => {
+    if (validNome(nome.value)) {
+        console.log("Nome validado");
+    } else {
+        console.log("O nome precisa ter pelo menos uma letra maiúscula e uma letra minúscula, com no mínimo 3 caracteres");
+    }
+});
 
 function validEmail(email) {
-    let emailPattern = /\S+@\S+\.\S+/
-    return emailPattern.test(email)
+    let emailPattern = /\S+@\S+\.\S+/;
+    return emailPattern.test(email);
 }
 
 function validPassword(password) {
-let passwordPattern = (/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{6,})$/)
-// /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])(?:([0-9a-zA-Z$*&@#])(?!\1)){8,}$/
-return passwordPattern.test(password)
+    let passwordPattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{6,})$/;
+    return passwordPattern.test(password);
+}
+
+function validNome(nome) {
+    let nomePattern = /^(?=.*[a-z])(?=.*[A-Z]).{3,}$/;
+    return nomePattern.test(nome);
 }
