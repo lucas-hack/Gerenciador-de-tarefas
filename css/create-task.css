@@ -116,15 +116,21 @@ button {
     border-radius: 20px;
 }
 
+.botao {
+    background: #D1D0F9;
+    border-radius: 30px;
+}
+
+.botao.selecionado {
+    background-color: #6368D9;
+}
+
 #College {
     position: absolute;
     width: 100px;
     height: 22px;
     left: 40px;
     top: 340px;
-
-    background: #D1D0F9;
-    border-radius: 30px;
 }
 
 #Work {
@@ -133,9 +139,6 @@ button {
     height: 22px;
     left: 145px;
     top: 340px;
-
-    background: #D1D0F9;
-    border-radius: 30px;
 }
 
 #Social {
@@ -144,9 +147,6 @@ button {
     height: 22px;
     left: 219px;
     top: 340px;
-
-    background: #D1D0F9;
-    border-radius: 30px;
 }
 
 #Study {
@@ -155,9 +155,6 @@ button {
     height: 22px;
     left: 40px;
     top: 368px;
-
-    background: #D1D0F9;
-    border-radius: 30px;
 }
 
 #Personal {
@@ -166,9 +163,6 @@ button {
     height: 22px;
     left: 116px;
     top: 368px;
-
-    background: #D1D0F9;
-    border-radius: 30px;
 }
 
 #Home {
@@ -177,9 +171,6 @@ button {
     height: 22px;
     left: 252px;
     top: 368px;
-
-    background: #D1D0F9;
-    border-radius: 30px;
 }
 
 #lixeira {
