@@ -1,0 +1,207 @@
+button {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+#voltar {
+    position: absolute;
+    left: 31px;
+    top: 65px;
+}
+
+.titulos {
+    font-weight: 500;
+    font-size: 14px;
+    color: #6368D9;
+}
+
+.task {
+    position: absolute;
+    left: 67px;
+    top: 56px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #6368D9;
+}
+
+.title {
+    position: absolute;
+    left: 35px;
+    top: 99px;
+}
+
+.date {
+    position: absolute;
+    left: 38px;
+    top: 167px;
+}
+
+.start {
+    position: absolute;
+    left: 39px;
+    top: 235px;
+}
+
+.end {
+    position: absolute;
+    left: 187px;
+    top: 235px;
+}
+
+.category {
+    position: absolute;
+    left: 41px;
+    top: 304px;
+}
+
+.description {
+    position: absolute;
+    left: 39px;
+    top: 385px;
+}
+
+.input {
+    box-sizing: border-box;
+
+    width: 284px;
+    height: 36px;
+
+    border: 1px solid #6368D9;
+    border-radius: 20px;
+}
+
+.inputTitle {
+    position: absolute;
+    left: 38px;
+    top: 130px;
+}
+
+.inputDate {
+    position: absolute;
+    left: 38px;
+    top: 200px;
+}
+
+.startTime {
+    position: absolute;
+    width: 135px;
+    height: 36px;
+    left: 38px;
+    top: 270px;
+
+    border: 1px solid #6368D9;
+    border-radius: 20px;
+}
+
+.endTime {
+    position: absolute;
+    width: 135px;
+    height: 36px;
+    left: 187px;
+    top: 270px;
+
+    border: 1px solid #6368D9;
+    border-radius: 20px;
+}
+
+.boxCategory {
+    position: absolute;
+    width: 284px;
+    height: 107px;
+    left: 39px;
+    top: 420px;
+
+    border: 1px solid #6368D9;
+    border-radius: 20px;
+}
+
+#College {
+    position: absolute;
+    width: 100px;
+    height: 22px;
+    left: 40px;
+    top: 340px;
+
+    background: #D1D0F9;
+    border-radius: 30px;
+}
+
+#Work {
+    position: absolute;
+    width: 69px;
+    height: 22px;
+    left: 145px;
+    top: 340px;
+
+    background: #D1D0F9;
+    border-radius: 30px;
+}
+
+#Social {
+    position: absolute;
+    width: 105px;
+    height: 22px;
+    left: 219px;
+    top: 340px;
+
+    background: #D1D0F9;
+    border-radius: 30px;
+}
+
+#Study {
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    left: 40px;
+    top: 368px;
+
+    background: #D1D0F9;
+    border-radius: 30px;
+}
+
+#Personal {
+    position: absolute;
+    width: 133px;
+    height: 22px;
+    left: 116px;
+    top: 368px;
+
+    background: #D1D0F9;
+    border-radius: 30px;
+}
+
+#Home {
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    left: 252px;
+    top: 368px;
+
+    background: #D1D0F9;
+    border-radius: 30px;
+}
+
+#lixeira {
+    position: absolute;
+    width: 39px;
+    height: 30px;
+    left: 84px;
+    top: 564px;
+
+    background: #D1D0F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#saveTask {
+    position: absolute;
+    width: 157px;
+    height: 30px;
+    left: 132px;
+    top: 564px;
+
+    background: #6368D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}

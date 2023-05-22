@@ -1,0 +1,51 @@
+.hello {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6368D9;
+}
+
+#saveName {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #6368D9;
+}
+
+#fotoPerfil {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 36px;
+    top: 38px;
+    border-radius: 90px;
+}
+
+.textinho {
+    position: absolute;
+    width: 204px;
+    height: 8px;
+    left: 37px;
+    top: 125px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6368D9;
+}
+
+#criarTask {
+    position: absolute;
+    left: 44.72%;
+    right: 44.17%;
+    top: 90%;
+    bottom: 3.75%;
+}

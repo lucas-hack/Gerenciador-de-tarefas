@@ -3,9 +3,6 @@
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let form = document.querySelector("form");
-// let textForm = document.getElementById("textForm");
-// let textEmail = document.getElementById("textEmail");
-// let textPassword = document.getElementById("textPassword");
 
 form.addEventListener('submit', (e) => {
     if (email.value == "" || password.value == "") {

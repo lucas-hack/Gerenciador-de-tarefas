@@ -6,6 +6,7 @@ function carregarImagem() {
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let form = document.querySelector("form");
+let imageUrl = document.getElementById("imageUrl")
 let nome = document.getElementById("nome");
 
 form.addEventListener('submit', (e) => {
@@ -24,7 +25,9 @@ form.addEventListener('submit', (e) => {
 
         localStorage.setItem("nome", nome.value);
 
-        window.location.href = "gerenciador de tarefas/pages/home.html";
+        localStorage.setItem("imageUrl", imageUrl.value);
+
+        window.location.href = "home.html"
         
     } else {
         console.log("Requisição não atendida");
@@ -55,6 +58,14 @@ nome.addEventListener('keyup', () => {
     }
 });
 
+imageUrl.addEventListener("keyup", () => {
+    if (validPassword(imageUrl.value)) {
+        console.log("imagem não aceita");
+    } else {
+        console.log("imagem aceita");
+    }
+});
+
 function validEmail(email) {
     let emailPattern = /\S+@\S+\.\S+/;
     return emailPattern.test(email);
@@ -68,4 +79,9 @@ function validPassword(password) {
 function validNome(nome) {
     let nomePattern = /^(?=.*[a-z])(?=.*[A-Z]).{3,}$/;
     return nomePattern.test(nome);
+}
+
+function validImageUrl(imageUrl) {
+    let imageUrlPattern = /\.(jpeg|jpg|gif|png)$/i;
+    return imageUrlPattern.test(imageUrl);
 }
